@@ -22,7 +22,20 @@
          <p class="alert"><%= alert %></p>
          </div>
       <% end %>
-      
+      <header>
+        <div class="container ">
+          <div class="row">
+            <div class="col md-1">
+               <% if user_signed_in? %>
+                  <%= link_to destroy_user_session_path, method: :delete, class: "button" do %>
+                    ログアウト
+                  <% end %>
+                  <% end %>
+            
+      </header>      
+          </div>
+        </div>
+      </div>
              <div class="navbar-end">
           <div class="navbar-item">
             <% if user_signed_in? %>

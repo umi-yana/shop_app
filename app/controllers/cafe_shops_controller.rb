@@ -5,6 +5,7 @@ class CafeShopsController < ApplicationController
 
   def show
     @shop = CafeShop.find(params[:id])
+    @review = Review.new
     
   end
 end
